@@ -1,62 +1,84 @@
-![image](https://user-images.githubusercontent.com/40845824/121069742-3accdb00-c7a4-11eb-87d0-3dc47e433762.png)
-
-
-# 🚀 Front end challenge
-
-Bem-vindo(a). Este é o desafio Front end!
-
-O objetivo deste desafio é avaliar suas habilidades de programação.
-Quando sua solução estiver pronta, basta responder o e-mail que recebeu com o link do seu repo aqui no Github!
-Em seguida, enviaremos o feedback e as instruções dos próximos passos!
-
-Caso tenha alguma dúvida, nós estamos disponíveis no email *recrutamento@rocketseat.com.br*
-Bom desafio!
-
-> ⚠️ **É importante que o seu repo esteja público, caso contrário não iremos conseguir avaliar sua resposta**
+# 🚀 Front end Challenge by RocketSeat
 
 # 🧠 Contexto
 
 ![Protótipo](https://storage.googleapis.com/xesque-dev/challenge-images/prototipo.png?42)
 
+## O que é necessário para rodar essa aplicação?
+
+- [Node.js](https://nodejs.org/en) em versões LTS;
+- [Yarn](https://yarnpkg.com/);
+
+## Tecnologias utilizadas
+
+- [TypeScript](https://www.typescriptlang.org/);
+- [Next.js](https://nextjs.org/);
+- [Axios](https://axios-http.com/);
+- [Styled-Components](https://styled-components.com/);
+- [GraphQL](https://graphql.org/);
+
+## Funcionalidades
+
 O desafio será implementar um e-commerce para venda de canecas e camisetas que deverá ter as seguintes funcionalidades:
+
 - [ ] Catálogo de produtos com paginação
-- [ ] Filtragem produtos por categoria
-- [ ] Busca por nome do produto
+- [x] Filtragem produtos por categoria
+- [x] Busca por nome do produto
 - [ ] Adicionar e remover produtos do carrinho
 - [ ] Finalizar compra
 
-## 📋 Instruções
+## Variáveis de Ambiente
 
-Chegou a hora de colocar a mão na massa!
+Para rodar esse projeto, você vai precisar adicionar as seguintes variáveis de ambiente no seu .env
 
-- Siga [esse protótipo](https://www.figma.com/file/rET9F2CeUEJdiVN7JRu993/E-commerce---capputeeno?node-id=680%3A6449)
-- Utilize Next.js e Typescript
-- Faça a estilização com styled-components
-- Utilize o local storage para gerenciar o carrinho
-- Por favor, inclua no README as instruções de instalação do projeto
-- Sinta-se livre para incluir quaisquer observações
-- Consuma nossa **API GraphQL** rodando o comando `yarn start` na pasta `api`
+**API_URL**
 
-## ✔️ Critérios de Avaliação
+`NEXT_PUBLIC_API_URL`
 
-Além dos requisitos levantados acima, iremos olhar para os seguintes critérios durante a correção do desafio:
+## Rodando localmente
 
-- Gerenciamento de estado
-- Componentização
-- Responsividade
-- Preocupação com usabilidade
-- Preocupação com acessibilidade
-- Testes e2e
-- Padrões de código
-- Padrão de commits (_Conventional_)
+Clone o projeto
 
-## 😎 Seria legal
-- Fazer deploy na vercel ou em outro local de sua preferência e disponibilizar um link de visualização, se necessário utilize esse servidor para a API GraphQL:  https://rocketseat-frontend-challenge.herokuapp.com/
-- Testes unitários
-- Utilização de cache do Next.js
+```bash
+  git clone https://github.com/flpcastro/frontend-challenge-rs.git
+```
 
----
+Entre no diretório da API GraphQL
 
-_O desafio acima foi cuidadosamente construído para propósitos de avaliação apenas. Já possuimos uma funcionalidade similar na nossa plataforma._
+```bash
+  cd api
+```
 
-Made with 💜 at Rocketseat
+Instale as dependências
+
+```bash
+  yarn
+```
+
+Rode a API GraphQL na porta 3333
+
+```bash
+  yarn start
+```
+
+Abra outro terminal na pasta raiz do projeto
+Entre no diretório do Frontend
+
+```bash
+  cd capputeeno
+```
+
+Baixe as dependencias
+
+```bash
+  yarn
+```
+
+Verifique que o .env está correto
+Inicie o Frontend
+
+```bash
+  yarn dev
+```
+
+Made by Felipe with 💜 to Rocketseat
