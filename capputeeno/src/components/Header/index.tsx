@@ -1,5 +1,6 @@
 'use client';
 
+import { useFilter } from "@/hooks/useFilter";
 import { CartControl } from "../CartControl";
 import { PrimaryInputWithSearchIcon } from "../PrimaryInputWithSearchIcon";
 import { Container, Logo } from "./styles";
@@ -11,6 +12,8 @@ const sairaStencilOne = Saira_Stencil_One({
 })
 
 export function Header() {
+  const { search, setSearch } = useFilter();
+
   return (
     <Container>
       <Logo
@@ -22,6 +25,8 @@ export function Header() {
       <div>
         <PrimaryInputWithSearchIcon 
           placeholder="Procurando por algo específico?"
+          value={search}
+          handleChange={setSearch}
         />
 
         <CartControl />
